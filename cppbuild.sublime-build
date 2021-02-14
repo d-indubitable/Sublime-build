@@ -1,0 +1,5 @@
+{
+	"cmd": ["start", "cmd", "/k" , "g++ $file_name -o $file_base_name & $file_base_name.exe & pause & exit"],
+	"selector": "source.c++",
+  	"shell": true,
+}

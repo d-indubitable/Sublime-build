@@ -1,0 +1,5 @@
+{
+	"cmd": ["start", "cmd", "/k" , "python $file & pause & exit"],
+	"selector": "source.python",
+  	"shell": true,
+}
