@@ -1,5 +1,11 @@
+// {
+// 	"cmd": ["start", "cmd", "/k" , "python $file & pause & exit"],
+// 	"selector": "source.python",
+//   	"shell": true,
+// }
 {
-	"cmd": ["start", "cmd", "/k" , "python $file & pause & exit"],
+	"cmd": "start pwsh -Command  \"& {python $file; cmd /c pause}\"",
 	"selector": "source.python",
   	"shell": true,
 }
+
