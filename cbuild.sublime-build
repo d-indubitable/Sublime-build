@@ -1,5 +1,10 @@
+// {
+// 	"cmd": ["start", "cmd", "/k" , "gcc $file_name -o $file_base_name & $file_base_name.exe & pause & exit"],
+// 	"selector": "source.c",
+//   	"shell": true,
+// }
 {
-	"cmd": ["start", "cmd", "/k" , "gcc $file_name -o $file_base_name & $file_base_name.exe & pause & exit"],
+	"cmd": "start pwsh -Command  \"& {gcc $file_name -o $file_base_name && ./$file_base_name.exe; cmd /c pause}\"",
 	"selector": "source.c",
   	"shell": true,
 }
