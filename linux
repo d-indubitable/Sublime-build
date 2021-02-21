@@ -1,3 +1,11 @@
+Cpp:
 {
-	"shell_cmd": "gnome-terminal -e 'bash -c \"python3 $file_name; read -n 1 -s -r -p \".\"\"'"
+	"shell_cmd": "gnome-terminal -- sh -c 'g++ $file_name; /usr/bin/time -f \"Execution time: %es\" ./a.out; read -n 1 -s -r -p \"Press any key to continue\"'",
+	"selector": "source.c++"
+}
+
+Python:
+{
+	"shell_cmd": "gnome-terminal -- sh -c '/usr/bin/time -f \"\nExecution time: %es\" python3 $file_name; read -n 1 -s -r -p \"Press any key to continue\"'",
+	"selector": "source.python"
 }
