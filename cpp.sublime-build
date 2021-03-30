@@ -1,0 +1,4 @@
+{
+	"shell_cmd" : "gnome-terminal -- sh -c 'g++ -std=gnu++20 $file_name; /usr/bin/time -f \"\nExecution time: %es\" ./a.out; bash -c \"echo -n Press any key to continue; read -n 1\"'",
+	"selector" : "source.c++"
+}
