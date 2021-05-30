@@ -1,0 +1,33 @@
+// {
+// 	"cmd": ["start", "cmd", "/k" , "g++ $file_name -o $file_base_name & $file_base_name.exe & pause & exit"],
+// 	"selector": "source.c++",
+//   	"shell": true,
+// }
+{
+	"cmd": "start pwsh -Command  \"& {g++ $file_name -o $file_base_name && ./$file_base_name.exe; cmd /c pause}\"",
+	"selector": "source.c++",
+  	"shell": true,
+}
+
+// {
+// 	"cmd": ["start", "cmd", "/k" , "gcc $file_name -o $file_base_name & $file_base_name.exe & pause & exit"],
+// 	"selector": "source.c",
+//   	"shell": true,z
+// }
+{
+	"cmd": "start pwsh -Command  \"& {gcc $file_name -o $file_base_name && ./$file_base_name.exe; cmd /c pause}\"",
+	"selector": "source.c",
+  	"shell": true,
+}
+
+Python:
+// {
+// 	"cmd": ["start", "cmd", "/k" , "python $file & pause & exit"],
+// 	"selector": "source.python",
+//   	"shell": true,
+// }
+{
+	"cmd": "start pwsh -Command  \"& {python $file; cmd /c pause}\"",
+	"selector": "source.python",
+  	"shell": true,
+}
