@@ -1,5 +1,10 @@
 C++: 
 {
-	"shell_cmd": "g++ -std=c++17 $file_name -o $file_base_name.out && osascript -e 'tell app \"Terminal\" to do script \"cd $file_path; clear; ./file_base_name.out; 			  echo -n Press any key to continue...; read -k1\"'",
+	"shell_cmd": "g++ -std=c++17 $file_name -o $file_base_name.out && osascript -e 'tell app \"Terminal\" to do script \"cd $file_path; clear; ./file_base_name.out; 			  echo -n Press any key to continue...; read -k1; exit\"'",
 	"selector": "source.c++"
+}
+Python:
+{
+	"shell_cmd": "osascript -e 'tell app \"Terminal\" to do script \"cd $file_path; clear; python3 $file_name; echo -n Press any key to continue...; read -k1; exit\"'",
+	"selector": "source.python"
 }
