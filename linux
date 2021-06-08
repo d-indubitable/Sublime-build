@@ -4,7 +4,7 @@ Cpp:
 	"selector": "source.c++"
 }
 {
-	"shell_cmd" : "g++ -std=gnu++20 $file_name && gnome-terminal -- sh -c '/usr/bin/time -f \"\nExecution time: %es\" ./a.out; bash -c \"echo -n Press any key to continue; read -n 1\"'",
+	"shell_cmd" : "g++ -std=gnu++20 $file_name -o $file_base_name.out && gnome-terminal -- sh -c '/usr/bin/time -f \"\nExecution time: %es\" ./$file_base_name.out; bash -c \"echo -n Press any key to continue; read -n 1\"'",
 	"selector" : "source.c++",
 	"quiet": true
 }
