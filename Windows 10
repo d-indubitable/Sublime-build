@@ -43,3 +43,33 @@ Python:
 	"selector": "source.python",
   	"shell": true,
 }
+linter-gcc:
+{
+    "linters":
+    {
+        "gcc": {
+            "disable": false,
+            "executable": ["gcc"],
+            "args": ["-fsyntax-only", "-std=c90"],
+            "I": [
+                "${file_path}/include",
+                "${folder}/include",
+                "/usr/local/include",
+            ],
+            "excludes": [],
+        },
+        "g++": {
+            "disable": false,
+            "executable": ["g++"],
+            "args": ["-fsyntax-only", "-std=c++17"],
+            "I": [
+                "${file_path}/include",
+                "${folder}/include",
+                "/usr/local/include",
+            ],
+            "excludes": [],
+        },
+    },
+}
+
+"show_panel_on_build": false,
