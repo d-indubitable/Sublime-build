@@ -43,7 +43,9 @@ Python:
 	"selector": "source.python",
   	"shell": true,
 }
-linter-gcc:
+//linter-gcc:
+
+
 {
     "linters":
     {
